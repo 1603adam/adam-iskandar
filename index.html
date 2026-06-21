@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>adam iskandar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav>
+  <div class="nav-logo">adam<span>.</span></div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="portfolio.html">portfolio</a></li>
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- ========== HERO ========== -->
+  <div class="hero fade-in">
+
+    <div class="hero-eyebrow">based in malaysia</div>
+
+    <div class="hero-photo-wrap">
+      <img
+        src="images/photo.jpg"
+        alt="adam iskandar"
+        class="hero-photo"
+        onerror="this.style.display='none'"
+      />
+    </div>
+
+    <h1 class="display-title">
+      hi, i'm <span>adam</span><br />
+      iskandar.
+    </h1>
+
+    <div class="hero-bio">
+      <p>
+        a student who builds things — apps, websites, circuits.
+        i like learning how technology works and turning ideas into
+        small, useful projects.
+      </p>
+    </div>
+
+    <div class="hero-links">
+      <a href="portfolio.html" class="btn btn-solid">view my work →</a>
+      <a href="about.html"     class="btn btn-ghost">about me</a>
+      <a href="contact.html"   class="btn btn-ghost">say hello</a>
+    </div>
+
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ========== WHAT I DO ========== -->
+  <div class="section fade-in">
+    <span class="section-label">// what i do</span>
+    <h2>a bit of everything.</h2>
+
+    <div style="margin-top:1.5rem;">
+
+      <div style="padding:1.2rem 0; border-bottom:1px solid var(--line);">
+        <div style="font-size:0.8rem; color:var(--text); margin-bottom:0.3rem;">web development</div>
+        <p style="font-size:0.78rem;">building pages with html, css, and javascript. this site is one of them.</p>
+      </div>
+
+      <div style="padding:1.2rem 0; border-bottom:1px solid var(--line);">
+        <div style="font-size:0.8rem; color:var(--text); margin-bottom:0.3rem;">app development</div>
+        <p style="font-size:0.78rem;">creating android apps with mit app inventor, connected to databases.</p>
+      </div>
+
+      <div style="padding:1.2rem 0; border-bottom:1px solid var(--line);">
+        <div style="font-size:0.8rem; color:var(--text); margin-bottom:0.3rem;">hardware & arduino</div>
+        <p style="font-size:0.78rem;">wiring up circuits, writing code for microcontrollers, making things blink and beep.</p>
+      </div>
+
+      <div style="padding:1.2rem 0;">
+        <div style="font-size:0.8rem; color:var(--text); margin-bottom:0.3rem;">databases</div>
+        <p style="font-size:0.78rem;">working with mysql to store and retrieve data for my projects.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- ========== FEATURED ========== -->
+  <div class="section fade-in">
+    <span class="section-label">// featured</span>
+    <h2>things i've built.</h2>
+
+    <div class="project-list">
+
+      <div class="project-item">
+        <div>
+          <div class="project-num">01</div>
+          <div class="project-title">simon says game</div>
+          <p class="project-desc">simple memorization game is made inspired by the classic simon says.</p>
+          <div class="project-tools">
+            <span class="tool-tag">mit app inventor</span>
+          </div>
+        </div>
+        <div class="project-btns">
+          <a href="portfolio.html" class="btn btn-ghost">details →</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div>
+          <div class="project-num">02</div>
+          <div class="project-title">retail shop inventory system v1</div>
+          <p class="project-desc">database system made using mysql along with it's erd and etc.</p>
+          <div class="project-tools">
+            <span class="tool-tag">mysql workbench</span>
+            <span class="tool-tag">draw.io</span>
+          </div>
+        </div>
+        <div class="project-btns">
+          <a href="portfolio.html" class="btn btn-ghost">details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>© 2025 adam iskandar · made with html, css & js</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/yourusername" target="_blank">github</a></li>
+      <li><a href="https://linkedin.com/in/yourusername" target="_blank">linkedin</a></li>
+      <li><a href="about.html">about</a></li>
+    </ul>
+  </footer>
+
+</div>
+
+<!-- ========== MUSIC PLAYER ========== -->
+<div class="music-player" id="music-player">
+  <button class="player-toggle" id="player-toggle">−</button>
+  <button class="mini-btn" id="mini-btn">♪ music</button>
+  <div class="player-header">
+    <div class="vinyl" id="vinyl"></div>
+    <div class="player-info">
+      <div class="player-track" id="track-label">lofi beats</div>
+      <div class="player-status" id="player-status">press ▶ to play</div>
+    </div>
+  </div>
+  <div class="player-controls">
+    <button class="ctrl-btn" id="prev-btn">⏮</button>
+    <button class="ctrl-btn play-btn" id="play-btn">▶</button>
+    <button class="ctrl-btn" id="next-btn">⏭</button>
+  </div>
+  <div class="progress-wrap">
+    <span class="time-label" id="current-time">0:00</span>
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <span class="time-label" id="total-time">0:00</span>
+  </div>
+  <div class="volume-wrap">
+    <span>♪</span>
+    <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.05" value="0.7" />
+  </div></div>
+
+<script src="main.js"></script>
+</body>
+</html>

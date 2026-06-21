@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about — adam iskandar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">adam<span>.</span></div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">home</a></li>
+    <li><a href="about.html" class="active">about</a></li>
+    <li><a href="portfolio.html">portfolio</a></li>
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- page title -->
+  <div class="section fade-in">
+    <span class="section-label">// about me</span>
+    <h1 class="display-title">a little about<br /><span>adam.</span></h1>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- BIO -->
+  <div class="section fade-in">
+    <div class="about-grid">
+
+      <div>
+        <p style="margin-bottom:1rem;">
+          hi, i'm adam iskandar — a student from malaysia who got into tech
+          because i was curious about how things work.
+        </p>
+        <p style="margin-bottom:1rem;">
+          i'm currently studying diploma in computer science at uitm.
+          i enjoy building small projects — whether it's a mobile app,
+          a website, or something with wires and a microcontroller.
+        </p>
+        <p>
+          i'm still learning every day, and i believe the best way
+          to learn is to just start building things.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="images/photo.jpg"
+          alt="adam iskandar"
+          style="width:140px; height:140px; border-radius:4px; object-fit:cover; border:1px solid var(--line);"
+          onerror="this.style.display='none'"
+        />
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- SKILLS -->
+  <div class="section fade-in">
+    <span class="section-label">// skills</span>
+    <h2>what i work with.</h2>
+
+    <ul class="skills-list">
+      <li>html &amp; css</li>
+      <li>javascript</li>
+      <li>mysql</li>
+      <li>mit app inventor</li>
+      <li>arduino</li>
+      <li>github</li>
+      <li>java</li>
+      <li>c++</li>
+      <li>css</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- EDUCATION -->
+  <div class="section fade-in">
+    <span class="section-label">// education</span>
+    <h2>where i've studied.</h2>
+
+    <div class="edu-item">
+      <h4>diploma in science computer</h4>
+      <p>uitm · 2024 – present</p>
+    </div>
+
+    <div class="edu-item">
+      <h4>spm</h4>
+      <p>smk paya rumput · 2019 - 2023</p>
+    </div>
+
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- LINKS -->
+  <div class="section fade-in">
+    <span class="section-label">// find me</span>
+    <h2>let's connect.</h2>
+
+    <ul class="contact-list">
+      <li>
+        <span class="contact-label">github</span>
+        <span class="contact-value"><a href="https://github.com/1603adam" target="_blank">github.com/1603adam</a></span>
+      </li>
+      <li>
+        <span class="contact-label">linkedin</span>
+        <span class="contact-value"><a href="https://www.linkedin.com/in/adam-iskandar-nazri/" target="_blank">linkedin.com/in/adam-iskandar-nazri</a></span>
+      </li>
+      <li>
+        <span class="contact-label">email</span>
+        <span class="contact-value"><a href="mailto:1603adam@gmail.com">1603adam@gmail.com</a></span>
+      </li>
+      <li>
+        <span class="contact-label">resume</span>
+        <span class="contact-value">
+          <a href="files/resume.pdf" download class="btn btn-ghost" style="padding:0.3rem 0.8rem; font-size:0.72rem;">
+            download resume →
+          </a>
+        </span>
+      </li>
+      <li>
+        <span class="contact-label">internship files</span>
+        <span class="contact-value">
+          <a href="files/internship files.zip" download class="btn btn-ghost" style="padding:0.3rem 0.8rem; font-size:0.72rem;">
+            download internship files →
+          </a>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 adam iskandar</p>
+    <ul class="footer-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </footer>
+
+</div>
+
+<div class="music-player" id="music-player">
+  <button class="player-toggle" id="player-toggle">−</button>
+  <button class="mini-btn" id="mini-btn">♪ music</button>
+  <div class="player-header">
+    <div class="vinyl" id="vinyl"></div>
+    <div class="player-info">
+      <div class="player-track" id="track-label">lofi beats</div>
+      <div class="player-status" id="player-status">press ▶ to play</div>
+    </div>
+  </div>
+  <div class="player-controls">
+    <button class="ctrl-btn" id="prev-btn">⏮</button>
+    <button class="ctrl-btn play-btn" id="play-btn">▶</button>
+    <button class="ctrl-btn" id="next-btn">⏭</button>
+  </div>
+  <div class="progress-wrap">
+    <span class="time-label" id="current-time">0:00</span>
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <span class="time-label" id="total-time">0:00</span>
+  </div>
+  <div class="volume-wrap">
+    <span>♪</span>
+    <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.05" value="0.7" />
+  </div></div>
+
+<script src="main.js"></script>
+</body>
+</html>
