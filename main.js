@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
       audio.play();
       isPlaying = true;
       if (vinyl)      vinyl.classList.add('spinning');
-      if (playBtn)    playBtn.textContent = '⏸';
+      if (playBtn)    playBtn.textContent = '❚❚';
       if (statusLabel) statusLabel.textContent = 'now playing';
     }
   }
